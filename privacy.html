@@ -5,37 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidade - Minhas Finanças</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1, h2 { color: #1a73e8; }
-        footer { margin-top: 40px; font-size: 0.9em; color: #666; }
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 25px; 
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h1 { color: #1a73e8; border-bottom: 2px solid #e8eaed; padding-bottom: 10px; }
+        h2 { color: #1a73e8; margin-top: 25px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .highlight {
+            background-color: #e8f0fe;
+            border-left: 4px solid #1a73e8;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        footer { margin-top: 40px; font-size: 0.9em; color: #666; text-align: center; border-top: 1px solid #e8eaed; padding-top: 20px; }
     </style>
 </head>
 <body>
+
+<div class="container">
     <h1>Política de Privacidade - Minhas Finanças</h1>
-    <p>Última atualização: Setembro de 2026</p>
+    <p><strong>Última atualização:</strong> Setembro de 2026</p>
 
-    <p>A sua privacidade é fundamental para nós. Esta Política de Privacidade explica como o aplicativo <strong>Minhas Finanças</strong> recolhe, utiliza e protege as suas informações pessoais.</p>
+    <p>A sua privacidade é de extrema importância para nós. Esta Política de Privacidade descreve de forma transparente como o aplicativo <strong>Minhas Finanças</strong> recolhe, utiliza, armazena e protege as suas informações pessoais e financeiras ao utilizar as nossas funcionalidades.</p>
 
-    <h2>1. Recolha e Uso de Informações</h2>
-    <p>O aplicativo <strong>Minhas Finanças</strong> foi concebido para gerir despesas e receitas pessoais. Os dados financeiros inseridos por si (como valores, categorias e descrições) são armazenados localmente no seu dispositivo.</p>
+    <h2>1. Recolha e Armazenamento Local de Dados</h2>
+    <p>O <strong>Minhas Finanças</strong> foi desenvolvido priorizando a privacidade e o controlo do utilizador. Todos os registos financeiros inseridos por si — incluindo despesas, receitas, categorias, datas, valores e descrições — são processados e armazenados <strong>exclusivamente de forma local</strong> no seu dispositivo móvel.</p>
 
-    <h2>2. Integração com Serviços do Google e Backup</h2>
-    <p>Quando utiliza a funcionalidade de cópia de segurança (backup), o aplicativo solicita autorização de autenticação Google (OAuth 2.0). O acesso é restrito estritamente às permissões necessárias para criar e restaurar ficheiros de cópia de segurança na sua conta do Google Drive. Não acedemos, lemos nem modificamos outros ficheiros armazenados no seu Google Drive.</p>
+    <h2>2. Autenticação e Cópia de Segurança (Google Drive API)</h2>
+    <p>Para garantir a segurança do seu histórico financeiro e permitir a recuperação de dados em novos dispositivos, a aplicação disponibiliza a funcionalidade opcional de cópia de segurança (backup e restauro).</p>
+    <ul>
+        <li><strong>OAuth 2.0 e Permissões:</strong> Utilizamos a autenticação segura do Google (OAuth 2.0) para conectar à sua conta. A permissão solicitada é estritamente restrita à criação, leitura e atualização da pasta oculta de dados da aplicação no seu Google Drive (escopo <code>appDataFolder</code> / <code>drive.appdata</code>).</li>
+        <li><strong>Acesso Limitado:</strong> O <strong>Minhas Finanças</strong> <u>não acede, não lê, não altera e não elimina</u> qualquer outro ficheiro, documento, foto ou pasta presente no seu Google Drive pessoal. O acesso fica estritamente confinado ao ficheiro de cópia de segurança criado pela própria aplicação.</li>
+    </ul>
 
-    <h2>3. Partilha de Dados</h2>
-    <p>Nós não vendemos, comercializamos nem partilhamos as suas informações pessoais ou financeiras com terceiros sob qualquer circunstância.</p>
+    <div class="highlight">
+        <strong>Conformidade com os Serviços de API do Google:</strong><br>
+        O uso e a transferência para qualquer outra aplicação de informações recebidas das APIs do Google por parte do <strong>Minhas Finanças</strong> aderem rigorosamente à <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Dados do Utilizador dos Serviços de API do Google</a>, incluindo os requisitos de Utilização Limitada (Limited Use).
+    </div>
 
-    <h2>4. Segurança dos Dados</h2>
-    <p>Adotamos medidas técnicas adequadas para proteger os seus dados contra acessos não autorizados. Os dados guardados no seu Google Drive permanecem sob o controlo total da sua conta Google.</p>
+    <h2>3. Anúncios e Serviços de Terceiros</h2>
+    <p>Para manter o aplicativo gratuito, podemos utilizar serviços de publicidade de terceiros, como o <strong>Google AdMob</strong>. Estes serviços podem recolher e utilizar identificadores anónimos do dispositivo (como o ID de publicidade) para a exibição de anúncios relevantes, medição de desempenho e prevenção de fraudes. Nenhum dado financeiro ou de registo pessoal é partilhado com redes de anúncios.</p>
 
-    <h2>5. Retenção e Eliminação de Dados</h2>
-    <p>Pode eliminar os seus dados a qualquer momento apagando as informações dentro da aplicação ou eliminando o ficheiro de cópia de segurança diretamente no seu Google Drive.</p>
+    <h2>4. Partilha e Transferência de Dados</h2>
+    <p>Nós <strong>não vendemos, alugamos, comercializamos nem partilhamos</strong> as suas informações pessoais ou financeiras com terceiros. As suas informações não são transmitidas para servidores externos sob o nosso controlo, permanecendo no seu dispositivo ou na sua conta pessoal do Google Drive.</p>
 
-    <h2>6. Contacto</h2>
-    <p>Se tiver dúvidas ou questões relativamente a esta Política de Privacidade, entre em contacto através do e-mail de suporte disponibilizado no aplicativo.</p>
+    <h2>5. Segurança das Informações</h2>
+    <p>Adotamos as melhores práticas técnicas de segurança no desenvolvimento da aplicação para proteger os seus dados contra acessos não autorizados, alteração ou destruição. A transmissão de dados de cópia de segurança para o Google Drive é encriptada utilizando protocolos de comunicação seguros (HTTPS/TLS).</p>
+
+    <h2>6. Retenção e Eliminação de Dados</h2>
+    <p>Você mantém controlo total sobre os seus dados a qualquer momento:</p>
+    <ul>
+        <li><strong>Eliminação Local:</strong> Pode apagar registos ou limpar os dados da aplicação através das definições do seu dispositivo Android.</li>
+        <li><strong>Eliminação da Cópia de Segurança:</strong> Pode remover o ficheiro de cópia de segurança diretamente da sua conta Google acedendo às definições de aplicações associadas no Google Drive.</li>
+        <li><strong>Revogação de Acesso:</strong> Pode revogar a permissão de acesso do aplicativo à sua conta Google a qualquer momento através da página de gestão de segurança da sua Conta Google.</li>
+    </ul>
+
+    <h2>7. Alterações a Esta Política de Privacidade</h2>
+    <p>Podemos atualizar a nossa Política de Privacidade periodicamente para refletir melhorias na aplicação ou alterações legislativas. Quaisquer alterações serão publicadas nesta página com a data de revisão atualizada.</p>
+
+    <h2>8. Contacto e Suporte</h2>
+    <p>Se tiver alguma dúvida, sugestão ou questão relativamente a esta Política de Privacidade ou ao tratamento dos seus dados no <strong>Minhas Finanças</strong>, entre em contacto connosco através do e-mail de suporte disponibilizado na página do aplicativo na Google Play Store.</p>
 
     <footer>
-        <p>&copy; Minhas Finanças. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Minhas Finanças. Todos os direitos reservados.</p>
     </footer>
+</div>
+
 </body>
 </html>
